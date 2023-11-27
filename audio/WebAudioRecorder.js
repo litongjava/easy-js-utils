@@ -67,7 +67,7 @@ class WebAudioRecorder {
     audio.src = window.URL.createObjectURL(this.getBlob());
   }
 
-  download(filename = 'recording.wav') {
+  save(filename = 'recording.wav') {
     const blob = this.encodeWAV(); // 获取音频数据的Blob
     const url = window.URL.createObjectURL(blob); // 创建一个链接到该Blob的URL
 
